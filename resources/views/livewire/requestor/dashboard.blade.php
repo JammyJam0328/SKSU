@@ -8,7 +8,7 @@
 <div class="bg-white shadow overflow-hidden sm:rounded-md">
     <ul class="divide-y-4 divide-gray-200">
 
-    @forelse ($requests->sortByDesc('created_at') as $request)
+    @forelse ($requests as $request)
     <li>
       <a href="{{ route('requestor-requestviewstatus', ['id' => $request->id]) }}" class="block hover:bg-gray-50 ">
         <div class="px-4 py-4 sm:px-6">
